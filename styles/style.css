@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+/* Mobile First */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+header #head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    width: 350px;
+    margin: 15px auto 5px auto;
+}
+
+header #head img {
+    margin-right: auto;
+}
+
+header #head h1 {
+    color: #A51010;
+
+
+    font-family: 'SUSE';
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    margin: auto;
+    list-style: none;
+}
+
+header nav ul a {
+    font-family: 'Noto Sans JP';
+    font-size: 1.1em;
+    font-weight: bold;
+
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
+
