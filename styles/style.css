@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 
 /* Mobile First */
 
@@ -10,48 +9,55 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(22, 22, 22);
+    font-family: "Poppins", sans-serif;
 }
 
-header #head {
+header #logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 
-    width: 350px;
-    margin: 15px auto 5px auto;
+    width: 300px;
+    margin: 20px 20px 7px 20px;
 }
 
-header #head img {
-    margin-right: auto;
-}
-
-header #head h1 {
+header #logo h1 {
     color: #A51010;
-
-
-    font-family: 'SUSE';
-
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 header nav ul {
     display: flex;
     justify-content: space-between;
-    width: 270px;
+    width: 310px;
     margin: auto;
     list-style: none;
 }
 
 header nav ul a {
-    font-family: 'Noto Sans JP';
-    font-size: 1.1em;
-    font-weight: bold;
+    font-size: 1.2em;
 
     text-decoration: none;
-    color: rgb(63, 63, 63);
+    color: rgb(90, 90, 90);
+
+    position: relative;
 }
 
+header nav ul a::after {
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background-color: #a51010a8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.7s;
+}
+
+header nav ul a:hover::after {
+    width: 100%;
+}
+
+header nav ul a:hover {
+    color: rgb(126, 126, 126);
+}
