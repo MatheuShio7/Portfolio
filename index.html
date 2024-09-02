@@ -6,16 +6,12 @@
     <title>Portfolio</title>
     <link rel="icon" href="images/meliodas_100.png">
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_base.css">
+    <link rel="stylesheet" href="styles/header_img.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/media-query.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,19 +21,54 @@
 <body>
 
     <header>
-        <div id="logo">
+        <div class="logo">
             <img src="images/meliodas_100.png" width="50" height="50">
             <h1>MatheuShio7</h1>
         </div> 
         
         <nav>
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="item" href="#">About</a></li>
+                <li><a class="item" href="#">Projects</a></li>
+                <li><a class="item" href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <div class="img_edge">
+            <img src="images/me.png" alt="Matheus Shiokawa Silva" width="150" height="180">
+        </div>
+
+        <section class="about">
+            <h1>About</h1>
+            <hr>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim consectetur eligendi eveniet, distinctio dolore laudantium tempore nostrum ipsam architecto atque libero. Blanditiis eligendi harum reprehenderit esse provident ipsum voluptatum quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolore fugit, facere quisquam animi sit eos laudantium dolores a sequi illo vero, consectetur tempore obcaecati nam illum quam vitae perspiciatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, voluptatibus illum dolor laboriosam cum nam. Aspernatur modi maiores ullam porro qui similique dicta veniam, error, non incidunt quasi, laboriosam animi!
+            </p>
+            <h2>Techs</h2>
+            <div class="techs">
+                <div class="tech_border">
+                    <img src="images/python.png" alt="Python" class="tech">
+                </div>
+                <div class="tech_border">
+                    <img src="images/mysql.png" alt="MySQL" class="tech">
+                </div>
+                <div class="tech_border">
+                    <img src="images/github.png" alt="GitHub" class="tech">
+                </div>
+                <div class="tech_border">
+                    <img src="images/html.png" alt="HTML5" class="tech">
+                </div>
+                <div class="tech_border">
+                    <img src="images/css.png" alt="CSS3" class="tech">
+                </div>
+                <div class="tech_border">
+                    <img src="images/js.png" alt="JavaScript" class="tech">
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>

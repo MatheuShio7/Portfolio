@@ -1,0 +1,93 @@
+header {
+    background-color: rgb(17, 17, 17);
+    box-shadow: 1px 1px 10px black;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: 0px 20px 7px 20px;
+    padding-top: 15px;
+}
+
+.logo h1 {
+    letter-spacing: 0.03em;
+    color: #880d0d;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+    margin: auto;
+    padding-bottom: 10px;
+    list-style: none; 
+}
+
+.item {
+    position: relative;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+}
+
+.item:hover {
+    font-size: 1.22em;
+    color: rgb(126, 126, 126);
+}
+
+.img_edge {
+    width: 200px;
+    height: 200px;
+    position: relative;
+
+    margin: auto;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #8f2626, #410606 70%);
+    border-radius: 40px;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.img_edge::after, .img_edge::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    padding: 3px;
+
+    background-image: conic-gradient(from var(--angle), rgba(255, 255, 255, 0.048) 90%, rgba(255, 255, 255, 0.479));
+    border-radius: 40px;
+    animation: 4s spin linear infinite;
+}
+
+.img_edge::before {
+    filter: blur(1.5em);
+    opacity: 0.4;
+}
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+.img_edge > img {
+    border-radius: 30px;
+}

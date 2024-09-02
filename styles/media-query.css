@@ -1,1 +1,23 @@
-@charset "UTF-8";
+/*
+Hover animation
+
+header nav ul a::after {
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background-color: #a51010a8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.7s;
+}
+
+header nav ul a:hover::after {
+    width: 100%;
+}
+
+header nav ul a:hover {
+    color: rgb(126, 126, 126);
+    font-size: 1.22em;
+}
+*/
