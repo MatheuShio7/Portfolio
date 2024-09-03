@@ -69,7 +69,7 @@ header ul {
 
     padding: 3px;
 
-    background-image: conic-gradient(from var(--angle), rgba(255, 255, 255, 0.048) 90%, rgba(255, 255, 255, 0.479));
+    background-image: conic-gradient(from var(--angle), rgba(255, 255, 255, 0.048) 10%, rgba(255, 255, 255, 0.479));
     border-radius: 40px;
     animation: 4s spin linear infinite;
 }

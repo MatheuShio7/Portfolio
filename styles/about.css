@@ -1,16 +1,16 @@
-.about p {
+#about p {
     width: 85%;
     margin: auto;
-    text-align: justify;
+    font-size: 1.05em;
     color: white;
 }
 
-.about p span {
+#about p span {
     font-weight: bolder;
     color: #880d0d;
 }
 
-.about h2 {
+#about h2 {
     margin-top: 20px;
     text-transform: uppercase;
     text-align: center;

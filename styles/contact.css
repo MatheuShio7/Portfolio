@@ -1,0 +1,57 @@
+.contact_div {
+    display: flex;
+    flex-flow: column;
+
+    width: 80%;
+
+    margin: auto;
+    margin-top: 25px;
+}
+
+.contact_div form {
+    text-align: center;
+}
+
+form input[type="email"], form textarea {
+    height: 50px;
+    width: 95%;
+
+    margin-bottom: 15px;
+    padding: 10px;
+
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+
+    color: white;
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    border: none;
+}
+
+form input[type="email"]::placeholder {
+    color: grey;
+}
+
+form textarea {
+    height: 90px;
+    resize: none;
+}
+
+form textarea::placeholder {
+    color: grey;
+}
+
+form input[type="submit"] {
+    width: 35%;
+
+    margin: auto;
+    margin-top: -5px;
+
+    font-size: 1.1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+
+    color: rgb(22, 22, 22);
+    border: none;
+}
