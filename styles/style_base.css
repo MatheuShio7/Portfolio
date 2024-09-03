@@ -8,3 +8,29 @@ body {
     background-color: rgb(22, 22, 22);
     font-family: "Poppins", sans-serif;
 }
+
+.section_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+.section_title h1 {
+    margin-left: 25px;
+    font-weight: 400;
+    font-size: 1.7em;
+    color: white;
+}
+
+.section_title i {
+    margin-right: 25px;
+    font-size: 2.2em;
+    color: #880d0d;
+}
+
+.section_hr {
+    margin: 0px 15px 15px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.048);
+}
