@@ -71,8 +71,8 @@ header ul {
 
     padding: 3px;
 
-    background-color: transparent;
     background-image: conic-gradient(from var(--angle), rgba(255, 255, 255, 0.048) 10%, rgba(255, 255, 255, 0.479));
+    background-color: transparent;
     border-radius: 40px;
     animation: 4s spin linear infinite;
 }
