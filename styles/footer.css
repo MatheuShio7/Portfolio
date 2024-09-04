@@ -1,0 +1,13 @@
+footer {
+    background-color: rgb(17, 17, 17);
+    box-shadow: 1px 1px 10px black;
+}
+
+.logo-footer {
+    margin: auto;
+    padding: 0;
+
+    width: 72.5%;
+
+    transform: scale(0.5);
+}

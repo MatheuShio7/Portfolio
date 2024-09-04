@@ -5,10 +5,11 @@ header {
 
 .logo {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 300px;
-    margin: 0px 20px 7px 20px;
+    width: 75%;
+    gap: 10px;
+    margin: auto;
     padding-top: 15px;
 }
 

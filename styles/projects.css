@@ -1,4 +1,8 @@
-.project_div {
+.project-section-title {
+    margin-top: 30px;
+}
+
+.stock-tracker-div {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -21,12 +25,12 @@
     color: white;
 }
 
-.project_div p {
+.stock-tracker-div p {
     text-align: center;
     color: white;
 }
 
-.project_div p a {
+.stock-tracker-div p a {
     color: #880d0d;
 }
 
