@@ -13,18 +13,17 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 95%;
-
+    width: 87%;
 }
 
 .email p {
-    font-size: 1.1em;
+    font-size: 1em;
 
     color: white;
 }
 
 .email i {
-    font-size: 2em;
+    font-size: 2.2em;
 
     color: #880d0d;
 }

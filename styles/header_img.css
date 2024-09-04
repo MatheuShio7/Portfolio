@@ -21,21 +21,22 @@ header {
 header ul {
     display: flex;
     justify-content: space-between;
-    width: 310px;
+    width: 80%;
     margin: auto;
+    margin-top: 5px;
     padding-bottom: 10px;
     list-style: none; 
 }
 
 .item {
     position: relative;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.589);
 }
 
 .item:hover {
-    font-size: 1.22em;
+    font-size: 1.12em;
     color: rgba(255, 255, 255, 0.700);
 }
 
