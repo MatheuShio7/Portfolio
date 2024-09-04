@@ -1,23 +1,37 @@
 /*
-Hover animation
+Image border animation
 
-header nav ul a::after {
-    content: ' ';
-    width: 0%;
-    height: 2px;
-    background-color: #a51010a8;
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.img_edge::after, .img_edge::before {
+    content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.7s;
-}
-
-header nav ul a:hover::after {
     width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    padding: 3px;
+
+    background-image: conic-gradient(from var(--angle), rgba(255, 255, 255, 0.048) 10%, rgba(255, 255, 255, 0.479));
+    border-radius: 40px;
+    animation: 4s spin linear infinite;
 }
 
-header nav ul a:hover {
-    color: rgb(126, 126, 126);
-    font-size: 1.22em;
+.img_edge::before {
+    filter: blur(1.5em);
+    opacity: 0.4;
+}
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
 }
 */
