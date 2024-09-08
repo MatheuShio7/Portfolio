@@ -30,14 +30,17 @@
         
         <nav>
             <ul>
-                <li><a class="item" href="#about">About</a></li>
-                <li><a class="item" href="#projects">Projects</a></li>
-                <li><a class="item" href="#contact">Contact</a></li>
+                <li><a class="item about-item" href="#about">About</a></li>
+                <li><a class="item projects-item" href="#projects">Projects</a></li>
+                <li><a class="item contact-item" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <div class="progress-bar"></div>
+        <div class="scroll-path"></div>
+
         <div class="img-lang-container">
             <div class="img_edge">
                 <img src="images/me.png" alt="Matheus Shiokawa Silva" width="150" height="180">
@@ -63,7 +66,7 @@
 
         <section id="about">
             <div class="base_section_title">
-                <h1>About</h1>
+                <h1 class="about-tittle">About</h1>
                 <i class="bi bi-file-person"></i>
             </div>
             <hr class="base_section_hr">
@@ -71,7 +74,7 @@
                 I'm <span>Matheus Shiokawa Silva</span>, a 4th-semester Computer Science student with a strong interest in <span>software development</span>. Born in Framingham and currently living in Brazil, I am constantly exploring new technologies and expanding my knowledge through courses and practical experiences. I aspire to <span>create innovative software solutions</span> that can positively impact society.
             </p>
             
-            <h2>Skills</h2>
+            <h2 class="skills-title">Skills</h2>
             <hr class="techs_hr">
             <div class="techs_div">
                 <div class="tech_border">
@@ -96,8 +99,8 @@
         </section>
 
         <section id="projects">
-            <div class="base_section_title project-section-title">
-                <h1>Projects</h1>
+            <div class="base_section_title">
+                <h1 class="projects-tittle">Projects</h1>
                 <i class="bi bi-card-heading"></i>
             </div>
             <hr class="base_section_hr">
@@ -107,7 +110,7 @@
                     Stocks Tracker
                 </h3>
                 <p>
-                    Stock Tracker is a platform for monitoring your assets portfolio. Enabling the register and obtaining important data such as price history and the last 12 earnings of that asset in graphic format. Software available in English, Chinese and Portuguese. All data obtained through <a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a>.
+                    Stock Tracker is a platform for monitoring your assets portfolio in real time. Enabling the register and obtaining important data such as price history and the last 12 earnings of that asset in graphic format. Software available in English, Chinese and Portuguese. All data obtained through <a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a>.
                 </p>
                 <div class="project_techs">
                     <div class="tech_border project_tech_border">
@@ -120,13 +123,13 @@
                         <img src="images/github.png" alt="GitHub" class="tech_logo project_tech_logo">
                     </div>
                 </div>
-                <a href="https://github.com/MatheuShio7/Stocks-Tracker" class="base-button" target="_blank">See on Github</a>
+                <a href="https://github.com/MatheuShio7/Stocks-Tracker" class="base-button seeongit-btn" target="_blank">See on Github</a>
             </div>
         </section>
 
         <section id="contact">
             <div class="base_section_title">
-                <h1>Contact</h1>
+                <h1 class="contact-tittle">Contact</h1>
                 <i class="bi bi-envelope-check"></i>
             </div>
             <hr class="base_section_hr">
@@ -139,6 +142,7 @@
                     <a href="https://www.linkedin.com/in/matheus-shiokawa-3705672a5/" target="_blank" class="social-media-icon"><i class="bi bi-linkedin"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61556234352528&locale=pt_BR" target="_blank" class="social-media-icon"><i class="bi bi-facebook"></i></a>
                     <a href="https://www.instagram.com/_matheushio7_/" target="_blank" class="social-media-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="https://github.com/MatheuShio7" target="_blank" class="social-media-icon"><i class="bi bi-github"></i></a>
                 </div>
                 <a href="images/CV(en).pdf" download class="btn-cv">Dowload CV</a>
             </div>

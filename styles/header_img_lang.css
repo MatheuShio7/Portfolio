@@ -35,7 +35,7 @@ header ul {
     color: rgba(255, 255, 255, 0.589);
 }
 
-.item:hover {
+.item:active {
     font-size: 1.12em;
     color: rgba(255, 255, 255, 0.700);
 }
@@ -142,9 +142,8 @@ header ul {
     margin-bottom: 0;
 }
 
-.lang-menu ul li a:hover {
-    color: rgba(255, 255, 255, 0.700);
-    text-decoration: underline;
+.lang-menu ul li a:active {
+    color: white;
 }
 
 .lang-menu ul li a.selected {

@@ -5,7 +5,6 @@
     width: 80%;
 
     margin: auto;
-    margin-top: 25px;
 }
 
 .email {
@@ -32,14 +31,19 @@
     display: flex;
     justify-content: space-between;
 
-    width: 40%;
+    width: 60%;
 
+    margin: auto;
     margin-bottom: 15px;
 }
 
 .social-media-icon {
     font-size: 2em;
     color: rgba(255, 255, 255, 0.226);
+}
+
+.social-media-icon:active {
+    color: rgba(255, 255, 255, 0.342);
 }
 
 .btn-cv {
