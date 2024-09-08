@@ -90,10 +90,16 @@ header ul {
 
 .selected-lang i {
     margin-left: 10px;
+    transition: transform 0.7s;
 }
 
+.selected-lang i.rotate {
+    transform: rotate(180deg);
+}
+
+/* Languages Menu */
 .lang-menu ul {
-    display: none;
+    visibility: hidden;
     flex-flow: column;
     align-items: start;
 
@@ -105,15 +111,30 @@ header ul {
     background-color: rgb(17, 17, 17);
     border: 1px solid rgb(12, 12, 12);
     border-radius: 10px;
-    color: white;
+    color: rgba(255, 255, 255, 0.589);
+
+    opacity: 0; 
+    transform: translateY(-10px); 
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s; 
+    height: 0; 
+    overflow: hidden;
 }
 
+/* Make the language menu visible */
+.lang-menu ul.show {
+    visibility: visible;
+    display: flex;
+    opacity: 1; 
+    transform: translateY(0); 
+    height: auto;
+}
+
+/* Language container (flag n title) */
 .lang-menu ul li {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
-
     margin-bottom: 5px;
 }
 
@@ -122,6 +143,11 @@ header ul {
 }
 
 .lang-menu ul li a:hover {
-    color: #880d0d;
+    color: rgba(255, 255, 255, 0.700);
+    text-decoration: underline;
+}
+
+.lang-menu ul li a.selected {
+    color: white;
     text-decoration: underline;
 }
