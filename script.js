@@ -10,15 +10,6 @@ const pt_br_title = pt_br_container.querySelector('a');
 const english_container = document.querySelector('.english')
 const english_title = english_container.querySelector('a');
 
-// Scrollbar
-let progress = document.querySelector('.progress-bar')
-let totalHeight = document.body.scrollHeight - window.innerHeight
-
-window.onscroll = function() {
-    let progressHeight = (window.scrollY / totalHeight) * 100
-    progress.style.height = progressHeight + "%"
-}
-
 // Translation
 window.addEventListener('load', function() {
     const selectedLanguage = localStorage.getItem('language')
