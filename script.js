@@ -10,6 +10,33 @@ const pt_br_title = pt_br_container.querySelector('a');
 const english_container = document.querySelector('.english')
 const english_title = english_container.querySelector('a');
 
+/*
+
+// Scrollbar
+let progress = document.querySelector('.progress-bar')
+let totalHeight = document.body.scrollHeight - window.innerHeight
+
+window.onscroll = function() {
+    let progressHeight = (window.scrollY / totalHeight) * 100
+    progress.style.height = progressHeight + "%"
+}
+    
+*/
+
+// Header items
+document.querySelectorAll('header nav a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        const targetId = this.getAttribute('href')
+        const targetSection = document.querySelector(targetId)
+        
+        event.preventDefault()
+        
+        targetSection.scrollIntoView({ behavior: 'smooth' })
+        
+        history.replaceState(null, '', ' ')
+    })
+})
+
 // Translation
 window.addEventListener('load', function() {
     const selectedLanguage = localStorage.getItem('language')
@@ -25,7 +52,19 @@ window.addEventListener('load', function() {
         this.document.querySelector('.about-tittle').innerHTML = 'Sobre'
         this.document.querySelector('#about p').innerHTML = 'Sou <span>Matheus Shiokawa Silva</span>, estudante do 4º semestre de Ciência da Computação, tenho interesse em <span>desenvolvimento de software</span>. Nascido em Framingham, Massachusetts e atualmente morando no Brasil, estou constantemente explorando novas tecnologias e ampliando meus conhecimentos através de cursos e experiências práticas. Almejo criar <span>soluções de software inovadoras</span> que possam impactar positivamente a sociedade.'
         this.document.querySelector('.skills-title').innerHTML = 'Habilidades'
-        this.document.querySelector('.techs_hr').style.width = '43%'
+
+        // Verify here
+        const techsHr = document.querySelector('.techs_hr');
+
+        if (techsHr) {
+            if (window.innerWidth <= 320) {
+                techsHr.style.width = '155px'
+            } else if (window.innerWidth <= 768) {
+                techsHr.style.width = '155px'
+            } else {
+                techsHr.style.width = '160px'
+            }
+        }
 
         this.document.querySelector('.projects-tittle').innerHTML = 'Projetos'
         this.document.querySelector('.stock-tracker-div p').innerHTML = 'Stock Tracker é uma plataforma para monitorar seu portfólio de ativos em tempo real. Habilitando o cadastro e obtendo dados importantes como histórico de preços e os últimos 12 ganhos daquele ativo em formato de gráfico. Software disponível em inglês, chinês e português. Todos os dados obtidos através do <a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a>.'
@@ -40,23 +79,30 @@ window.addEventListener('load', function() {
     }
 })
 
+var openLanguageMenu = false
+
 function openMenu() {
     language_menu.classList.toggle('show')
+    openLanguageMenu = true
 }
 
 function closeMenu() {
     language_menu.classList.remove('show')
+    openLanguageMenu = false
 }
 
+// Add event click to language menu
 selectedLang.addEventListener('click', function(event) {
     icon.classList.toggle('rotate')
     openMenu()
 })
 
-// Close menu on click
+// Close menu on document click
 document.addEventListener('click', function(event) {
     if (!language_menu.contains(event.target) && !selectedLang.contains(event.target)) {
-        icon.classList.toggle('rotate')
+        if (openLanguageMenu) {
+            icon.classList.toggle('rotate')
+        }
         closeMenu()
     }
 })

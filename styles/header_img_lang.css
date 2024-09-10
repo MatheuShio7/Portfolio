@@ -67,6 +67,8 @@ header ul {
 }
 
 .img_edge img {
+    width: 150px;
+    height: 180px;
     border-radius: 30px;
 }
 
@@ -85,6 +87,7 @@ header ul {
     justify-content: center;
     align-items: center;
 
+    cursor: pointer;
     color: white;
 }
 
@@ -136,6 +139,7 @@ header ul {
     align-items: center;
     gap: 5px;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .lang-menu ul li:last-child {
