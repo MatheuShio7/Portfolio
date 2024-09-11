@@ -1,346 +1,37 @@
 /*
-Image border animation
+photo border animation
 @property --angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-
-.img_edge::after, .img_edge::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-
-    padding: 3px;
-
-    background-image: conic-gradient(from var(--angle), rgba(255, 255, 255, 0.048) 10%, rgba(255, 255, 255, 0.479));
-    border-radius: 40px;
-    animation: 4s spin linear infinite;
-}
-
-.img_edge::before {
-    filter: blur(1.5em);
-    opacity: 0.4;
-}
-
-@keyframes spin {
-    from{
-        --angle: 0deg;
-    }
-    to {
-        --angle: 360deg;
-    }
-}
-
-Progress bar
-.scroll-path {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 3px;
-    height: 100%;
-    background: rgb(255, 255, 255, 0.05);
-}
-
-.progress-bar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 3px;
-    background-color: rgba(255, 255, 255, 0.247);
-}
-
-.progress-bar:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.247);
-    filter: blur(20px);
-}
-
-.progress-bar:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.247);
-    filter: blur(80px);
-}
-*/
-
-@media (max-width: 320px) {
-    .img_edge {
-        margin-right: 40px;
-    }
-
-    .techs_div {
-        width: 75%;
-    }
-
-    .project_techs {
-        width: 90%;
-    }
-
-    .email {
-        align-self: center;
-        margin: 0;
-        width: 105%;
-    }
-
-    .social-media {
-        width: 70%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .logo {
-        padding: 20px 0;
-    }
-
-    header ul {
-        width: 60%;
-    }
-
-    header ul .item {
-        font-size: 1.2em;
-    }
-
-    main {
-        padding: 0 50px;
-    }
-
-    .img-lang-container {
-        margin-top: 50px;
-    }
-
-    .img_edge {
-        width: 260px;
-        height: 260px;
-    }
-
-    .img_edge img {
-        width: 200px;
-        height: 250px;
-    }
-
-    .lang-menu ul {
-        padding: 15px 15px;
-    }
-
-    .lang-menu ul li {
-        margin-bottom: 10px;
-    }
-
-    .base_section_title h1 {
-        font-size: 1.8em;
-    }
-
-    #about p {
-        font-size: 1.08em;
-    }
-
-    #about h2 {
-        margin-top: 30px;
-    }
-
-    .techs_div {
-        width: 75%;
-    }
-
-    .stock-tracker-div {
-        width: 65%;
-    }
-
-    .project_techs {
-        width: 60%;
-    }
-
-    .email {
-        width: 50%;
-        justify-content: start;
-
-        gap: 1em;
-
-        margin-bottom: 15px;
-    }
-
-    .social-media {
-        width: 40%;
-    }
-
-    .social-media-icon {
-        font-size: 2.2em;
-    }
-
-    .btn-cv {
-        font-size: 1.2em;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1280px) {
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        padding: 25px;
-
-        background-color: rgba(17, 17, 17, 0.719);
-    }
-
-    .logo {
-        width: auto;
-
-        margin: 0;
-        padding: 0;
-    }
-
-    header nav {
-        margin: 0;
-
-        width: 40%;
-    }
-
-    header ul .item {
-        font-size: 1.25em;
-    }
-
-    .item:hover {
-        font-size: 1.27em;
-        color: rgba(255, 255, 255, 0.700);
-    }
-
-    .item.active {
-        font-size: 1.27em;
-        color: rgba(255, 255, 255, 0.700);
-    }
-
-    .img-lang-container {
-        margin-top: 50px;
-    }
-
-    .img_edge {
-        width: 260px;
-        height: 260px;
-    }
-
-    .img_edge img {
-        width: 200px;
-        height: 250px;
-    }
-
-    main {
-        margin: auto;
-        width: 75%;
-    }
-
-    .base_section_title h1 {
-        font-size: 1.8em;
-    }
-
-    .base_section_hr {
-        margin-bottom: 40px;
-    }
-
-    #about p {
-        width: 80%;
-        font-size: 1.1em;
-        line-height: 1.8;
-    }
-
-    .skills-title {
-        margin-top: 30px;
-        font-size: 1.7em;
-    }
-
-    .techs_hr {
-        width: 85px;
-    }
-
-    .techs_div {
-        width: 55%;
-    }
-
-    .stock-tracker-div {
-        width: 55%;
-
-        padding: 30px 30px;
-    }
-
-    .stocks-tracker-img {
-        width: 85%;
-        height: 100%;
-    }
-
-    .project_name {
-        font-size: 1.3em;
-    }
-
-    .stock-tracker-div p {
-        font-size: 1.1em;
-    }
-
-    .project_techs {
-        width: 60%;
-    }
-
-    .project_tech_border {
-        width: 70px;
-        height: 70px;
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
     }
     
-    .project_tech_logo {
-        width: 50px;
-        height: 50px;
+    .img_edge::after, .img_edge::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    
+        padding: 3px;
+    
+        background-image: conic-gradient(from var(--angle), rgba(255, 255, 255, 0.048) 10%, rgba(255, 255, 255, 0.479));
+        border-radius: 40px;
+        animation: 4s spin linear infinite;
     }
-
-    .seeongit-btn {
-        padding: 5px 20px;
-        font-size: 1.2em;
+    
+    .img_edge::before {
+        filter: blur(1.5em);
+        opacity: 0.4;
     }
-
-    .email {
-        width: 40%;
+    
+    @keyframes spin {
+        from{
+            --angle: 0deg;
+        }
+        to {
+            --angle: 360deg;
+        }
     }
+*/
 
-    .email p {
-        font-size: 1.1em;
-    }
-
-    .email i {
-        font-size: 2.3em;
-    }
-
-    .social-media {
-        width: 30%;
-
-        margin-top: 15px;
-        margin-bottom: 25px;
-    }
-
-    .social-media-icon {
-        font-size: 2.1em;
-    }
-
-    .social-media-icon:hover {
-        font-size: 2.2em;
-        color: rgba(255, 255, 255, 0.342);
-    }
-
-    .btn-cv {
-        font-size: 1.2em;
-    }
-
-    .logo-footer {
-        transform: scale(0.7);
-
-        padding: 10px 0;
-    }
-}

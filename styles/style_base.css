@@ -6,9 +6,6 @@
 
 html {
     background-color: rgb(17, 17, 17);
-}
-
-body {
     background-image: url(../images/background-standing.png);
     background-repeat: no-repeat;
     background-size: cover;
