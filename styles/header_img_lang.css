@@ -28,7 +28,7 @@ header ul {
     list-style: none; 
 }
 
-.item {
+header ul .item {
     position: relative;
     font-size: 1.1em;
     text-decoration: none;

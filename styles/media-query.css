@@ -90,6 +90,7 @@ Progress bar
 
     .email {
         align-self: center;
+        margin: 0;
         width: 105%;
     }
 
@@ -107,7 +108,7 @@ Progress bar
         width: 60%;
     }
 
-    .item {
+    header ul .item {
         font-size: 1.2em;
     }
 
@@ -147,5 +148,199 @@ Progress bar
 
     #about h2 {
         margin-top: 30px;
+    }
+
+    .techs_div {
+        width: 75%;
+    }
+
+    .stock-tracker-div {
+        width: 65%;
+    }
+
+    .project_techs {
+        width: 60%;
+    }
+
+    .email {
+        width: 50%;
+        justify-content: start;
+
+        gap: 1em;
+
+        margin-bottom: 15px;
+    }
+
+    .social-media {
+        width: 40%;
+    }
+
+    .social-media-icon {
+        font-size: 2.2em;
+    }
+
+    .btn-cv {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 25px;
+
+        background-color: rgba(17, 17, 17, 0.719);
+    }
+
+    .logo {
+        width: auto;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav {
+        margin: 0;
+
+        width: 40%;
+    }
+
+    header ul .item {
+        font-size: 1.25em;
+    }
+
+    .item:hover {
+        font-size: 1.27em;
+        color: rgba(255, 255, 255, 0.700);
+    }
+
+    .item.active {
+        font-size: 1.27em;
+        color: rgba(255, 255, 255, 0.700);
+    }
+
+    .img-lang-container {
+        margin-top: 50px;
+    }
+
+    .img_edge {
+        width: 260px;
+        height: 260px;
+    }
+
+    .img_edge img {
+        width: 200px;
+        height: 250px;
+    }
+
+    main {
+        margin: auto;
+        width: 75%;
+    }
+
+    .base_section_title h1 {
+        font-size: 1.8em;
+    }
+
+    .base_section_hr {
+        margin-bottom: 40px;
+    }
+
+    #about p {
+        width: 80%;
+        font-size: 1.1em;
+        line-height: 1.8;
+    }
+
+    .skills-title {
+        margin-top: 30px;
+        font-size: 1.7em;
+    }
+
+    .techs_hr {
+        width: 85px;
+    }
+
+    .techs_div {
+        width: 55%;
+    }
+
+    .stock-tracker-div {
+        width: 55%;
+
+        padding: 30px 30px;
+    }
+
+    .stocks-tracker-img {
+        width: 85%;
+        height: 100%;
+    }
+
+    .project_name {
+        font-size: 1.3em;
+    }
+
+    .stock-tracker-div p {
+        font-size: 1.1em;
+    }
+
+    .project_techs {
+        width: 60%;
+    }
+
+    .project_tech_border {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .project_tech_logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .seeongit-btn {
+        padding: 5px 20px;
+        font-size: 1.2em;
+    }
+
+    .email {
+        width: 40%;
+    }
+
+    .email p {
+        font-size: 1.1em;
+    }
+
+    .email i {
+        font-size: 2.3em;
+    }
+
+    .social-media {
+        width: 30%;
+
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    .social-media-icon {
+        font-size: 2.1em;
+    }
+
+    .social-media-icon:hover {
+        font-size: 2.2em;
+        color: rgba(255, 255, 255, 0.342);
+    }
+
+    .btn-cv {
+        font-size: 1.2em;
+    }
+
+    .logo-footer {
+        transform: scale(0.7);
+
+        padding: 10px 0;
     }
 }
