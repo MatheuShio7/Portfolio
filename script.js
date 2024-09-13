@@ -1,4 +1,4 @@
-// Navigation header items 
+// Navigation header items scroll function
 document.querySelectorAll('header nav a').forEach(link => {
     link.addEventListener('click', function(event) {
         const targetId = this.getAttribute('href')
@@ -6,11 +6,10 @@ document.querySelectorAll('header nav a').forEach(link => {
 
         event.preventDefault()
 
-        const headerHeight = document.querySelector('header').offsetHeight
-        const sectionPosition = targetSection.offsetTop - headerHeight
+        const targetPosition = targetSection.offsetTop;
 
         window.scrollTo({
-            top: sectionPosition,
+            top: targetPosition,
             behavior: 'smooth'
         });
 
@@ -18,11 +17,12 @@ document.querySelectorAll('header nav a').forEach(link => {
     })
 })
 
-const language_icon = document.querySelector('.selected-lang')
+// Language
+const language_icon = document.querySelector('.selected-language')
 
-const flagSelectedLanguage = document.querySelector('.selected-lang img')
-const icon = document.querySelector('.selected-lang i')
-const language_menu = document.querySelector('.lang-menu ul')
+const flagSelectedLanguage = document.querySelector('.selected-language img')
+const icon = document.querySelector('.selected-language i')
+const language_menu = document.querySelector('.language-menu ul')
 
 var languageMenuOpen = false
 
@@ -63,7 +63,7 @@ pt_br_container.addEventListener('click', function() {
     icon.classList.remove('rotate')
     language_menu.classList.remove('show')
 
-    document.querySelectorAll('.lang-menu ul li a').forEach(link => {
+    document.querySelectorAll('.language-menu ul li a').forEach(link => {
         link.classList.remove('selected')
     });
 
@@ -78,14 +78,14 @@ const english_container = document.querySelector('.english')
 const english_title = english_container.querySelector('a')
 
 document.querySelector('.english').addEventListener('click', function() {
-    const flagSelectedLanguage = document.querySelector('.selected-lang img')
+    const flagSelectedLanguage = document.querySelector('.selected-language img')
     flagSelectedLanguage.src = 'images/usa.png'
 
     icon.classList.toggle('rotate')
 
     language_menu.classList.toggle('show')
 
-    document.querySelectorAll('.lang-menu ul li a').forEach(link => {
+    document.querySelectorAll('.language-menu ul li a').forEach(link => {
         link.classList.remove('selected');
     });
 
@@ -106,11 +106,11 @@ window.addEventListener('load', function() {
         this.document.querySelector('.projects-item').innerHTML = 'Projetos'
         this.document.querySelector('.contact-item').innerHTML = 'Contato'
 
-        this.document.querySelector('.about-tittle').innerHTML = 'Sobre'
-        this.document.querySelector('#about p').innerHTML = 'Sou <span>Matheus Shiokawa Silva</span>, estudante do 4º semestre de Ciência da Computação, tenho interesse em <span>desenvolvimento de software</span>. Nascido em Framingham, Massachusetts e atualmente morando no Brasil, estou constantemente explorando novas tecnologias e ampliando meus conhecimentos através de cursos e experiências práticas. Almejo criar <span>soluções de software inovadoras</span> que possam impactar positivamente a sociedade.'
+        this.document.querySelector('.about-title').innerHTML = 'Sobre'
+        this.document.querySelector('.about-section p').innerHTML = 'Sou <span>Matheus Shiokawa Silva</span>, estudante do 4º semestre de Ciência da Computação, tenho interesse em <span>desenvolvimento de software</span>. Nascido em Framingham, Massachusetts e atualmente morando no Brasil, estou constantemente explorando novas tecnologias e ampliando meus conhecimentos através de cursos e experiências práticas. Almejo criar <span>soluções de software inovadoras</span> que possam impactar positivamente a sociedade.'
         this.document.querySelector('.skills-title').innerHTML = 'Habilidades'
 
-        this.document.querySelector('.projects-tittle').innerHTML = 'Projetos'
+        this.document.querySelector('.projects-title').innerHTML = 'Projetos'
         this.document.querySelector('.stock-tracker-div p').innerHTML = 'Stock Tracker é uma plataforma para monitorar seu portfólio de ativos em tempo real. Habilitando o cadastro e obtendo dados importantes como histórico de preços e os últimos 12 ganhos daquele ativo em formato de gráfico. Software disponível em inglês, chinês e português. Todos os dados obtidos através do <a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a>.'
         this.document.querySelector('.seeongit-btn').innerHTML = 'Ver no GitHub'
 

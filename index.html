@@ -8,8 +8,7 @@
 
     <link rel="stylesheet" href="styles/style_base.css">
     <link rel="stylesheet" href="styles/header_img_lang.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/media-query.css">
@@ -30,21 +29,21 @@
         
         <nav>
             <ul>
-                <li><a class="item about-item" href="#about">About</a></li>
-                <li><a class="item projects-item" href="#projects">Projects</a></li>
+                <li><a class="item about-item" href=".about-section">About</a></li>
+                <li><a class="item projects-item" href=".projects-section">Projects</a></li>
                 <li><a class="item contact-item" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="img-lang-container">
-            <div class="img_edge">
+        <div class="imageLanguage-container">
+            <div class="image_edge">
                 <img src="images/me.png" alt="Matheus Shiokawa Silva">
             </div>
 
-            <div class="lang-menu">
-                <div class="selected-lang">
+            <div class="language-menu">
+                <div class="selected-language">
                     <img src="images/usa.png" alt="" width="30.4" height="20">
                     <i class="bi bi-chevron-up"></i>
                 </div>
@@ -61,18 +60,21 @@
             </div>
         </div>
 
-        <section id="about">
-            <div class="base_section_title">
-                <h1 class="about-tittle">About</h1>
+        <section class="about-section">
+            <div class="baseSection_head">
+                <h1 class="about-title">About</h1>
                 <i class="bi bi-file-person"></i>
             </div>
-            <hr class="base_section_hr">
+            <hr class="baseSection_hr">
             <p>
                 I'm <span>Matheus Shiokawa Silva</span>, a 4th-semester Computer Science student with a strong interest in <span>software development</span>. Born in Framingham and currently living in Brazil, I am constantly exploring new technologies and expanding my knowledge through courses and practical experiences. I aspire to <span>create innovative software solutions</span> that can positively impact society.
             </p>
             
-            <h2 class="skills-title">Skills</h2>
-            <hr class="techs_hr">
+            <div class="skills-head">
+                <h2 class="skills-title">Skills</h2>
+                <hr class="skills_hr">
+            </div>
+
             <div class="techs_div">
                 <div class="tech_border">
                     <img src="images/python.png" alt="Python" class="tech_logo">
@@ -95,14 +97,15 @@
             </div>
         </section>
 
-        <section id="projects">
-            <div class="base_section_title">
-                <h1 class="projects-tittle">Projects</h1>
+        <section class="projects-section">
+            <div class="baseSection_head">
+                <h1 class="projects-title">Projects</h1>
                 <i class="bi bi-card-heading"></i>
             </div>
-            <hr class="base_section_hr">
-            <div class="stock-tracker-div">
-                <img class="stocks-tracker-img" src="images/stocks_tracker.png" alt="Stocks Tracker">
+            <hr class="baseSection_hr">
+
+            <div class="stockTracker-container">
+                <img class="stocksTracker-image" src="images/stocks_tracker.png" alt="Stocks Tracker">
                 <h3 class="project_name">
                     Stocks Tracker
                 </h3>
@@ -125,11 +128,11 @@
         </section>
 
         <section id="contact">
-            <div class="base_section_title">
+            <div class="baseSection_head">
                 <h1 class="contact-tittle">Contact</h1>
                 <i class="bi bi-envelope-check"></i>
             </div>
-            <hr class="base_section_hr">
+            <hr class="baseSection_hr">
             <div class="contact_content">
                 <div class="email">
                     <i class="bi bi-envelope-at-fill"></i>

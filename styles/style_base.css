@@ -17,32 +17,6 @@ html {
     width: 0;
 }
 
-.base_section_title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-top: 40px;
-}
-
-.base_section_title h1 {
-    margin-left: 25px;
-    font-weight: 400;
-    font-size: 1.7em;
-    color: white;
-}
-
-.base_section_title i {
-    margin-right: 25px;
-    font-size: 2.2em;
-    color: #880d0d;
-}
-
-.base_section_hr {
-    margin: 0px 15px 20px 15px;
-    border: 1px solid rgba(255, 255, 255, 0.048);
-}
-
 .base-button {
     display: flex;
     justify-content: center;
