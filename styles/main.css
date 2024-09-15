@@ -267,3 +267,102 @@ main {
     width: 40px;
     height: 40px;
 }
+
+.seeOnGit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    
+    margin-top: 15px;
+    padding: 0 15px;
+
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+
+    background-color: #880d0d;
+    color: rgb(17, 17, 17);
+
+    border-radius: 25px;
+    box-shadow: 0 0 5px #880d0d;
+
+    transition: 0.3s;
+}
+
+.seeOnGit-btn:active {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #880d0d;
+}
+
+
+/* CONTACT SECTION */
+.contact_content {
+    display: flex;
+    flex-flow: column;
+
+    width: 80%;
+
+    margin: auto;
+}
+
+.email-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 87%;
+
+    margin: auto;
+}
+
+.email-container > p {
+    font-size: 1em;
+
+    color: white;
+}
+
+.email-container > i {
+    font-size: 2.2em;
+
+    color: #880d0d;
+}
+
+.socialMedia-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 60%;
+
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.socialMedia-icon {
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.226);
+}
+
+.socialMedia-icon:active {
+    color: rgba(255, 255, 255, 0.342);
+    transform: scale(1.05);
+}
+
+.btn-cv {
+    margin: auto;
+    padding: 10px 15px;
+
+    font-size: 1.1em;
+    text-decoration: none;
+
+    color: white;
+    border: 1px solid #880d0d;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.btn-cv:active {
+    background-color: #880d0d;
+}

@@ -16,31 +16,3 @@ html {
 ::-webkit-scrollbar {
     width: 0;
 }
-
-.base-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 50px;
-    
-    margin-top: 15px;
-    padding: 0 15px;
-
-    font-size: 1.1em;
-    font-weight: bold;
-    text-decoration: none;
-
-    background-color: #880d0d;
-    color: rgb(17, 17, 17);
-
-    border-radius: 25px;
-    box-shadow: 0 0 5px #880d0d;
-
-    transition: 0.3s;
-}
-
-.base-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #880d0d;
-}
