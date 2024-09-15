@@ -35,3 +35,114 @@ photo border animation
     }
 */
 
+@media (max-width: 320px) {
+    header ul {
+        width: 85%;
+    }
+
+    .about-section > .techs-container {
+        width: 75%;
+    }
+
+    .stockTracker-container > .stocksTracker-image {
+        height: 125px;
+    }
+
+    .stockTracker-container > .project_techs {
+        width: 90%;
+    }
+
+    .email-container {
+        width: 83%;
+    }
+
+    .socialMedia-container {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    header ul {
+        width: 60%;
+
+        margin-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    header ul .item {
+        font-size: 1.15em;
+    }
+
+    .item:active {
+        font-size: 1.17em;
+    }
+
+    main {
+        margin: 40px 20px;
+    }
+
+    .image_edge {
+        width: 220px;
+        height: 220px;
+    }
+
+    .image_edge img {
+        width: 180px;
+        height: 210px;
+    }
+
+    .language-menu {
+        right: 30px;
+    }
+
+    .baseSection_head {
+        margin-top: 55px;
+    }
+
+    .about-section > .skills-head {
+        margin-bottom: 30px;
+    }
+
+    .stockTracker-container {
+        width: 60%;
+    }
+
+    .stockTracker-container {
+        padding: 30px 35px;
+    }
+
+    .stockTracker-container > .stocksTracker-image {
+        height: 195px;
+    }
+
+    .stockTracker-container > .project_name {
+        font-size: 1.3em;
+        padding: 20px 0;
+    }
+
+    .stockTracker-container > .project_techs {
+        width: 70%;
+    }
+
+    .email-container {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+    .email-container > p {
+        font-size: 1.05em;
+    }
+
+    .socialMedia-container {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    .logo-footer {
+        transform: scale(0.6);
+    }
+}

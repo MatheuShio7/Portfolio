@@ -23,7 +23,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(135deg, #8f2626, #410606 70%);
+    background: linear-gradient(135deg, var(--red), var(--dark_red) 70%);
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.473);
     position: relative;
@@ -76,7 +76,7 @@ main {
 
     list-style: none;
 
-    background-color: rgb(17, 17, 17);
+    background-color: var(--grey_bg);
     border: 1px solid rgb(12, 12, 12);
     border-radius: 10px;
     color: rgba(255, 255, 255, 0.589);
@@ -141,7 +141,7 @@ main {
 .baseSection_head i {
     margin-right: 25px;
     font-size: 2.2em;
-    color: #880d0d;
+    color: var(--red);
 }
 
 .baseSection_hr {
@@ -155,7 +155,7 @@ main {
     align-items: center;
     margin-bottom: 20px;
     padding: 5px;
-    background: linear-gradient(135deg, #880d0d, #410606 70%);
+    background: linear-gradient(135deg, var(--red), var(--dark_red) 70%);
     border-radius: 20px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.450);
 }
@@ -171,7 +171,7 @@ main {
 
 .about-section > p > span {
     font-weight: bolder;
-    color: #880d0d;
+    color: var(--red);
 }
 
 .about-section > .skills-head {
@@ -180,7 +180,7 @@ main {
     margin-block: 20px;
     text-transform: uppercase;
     text-align: center;
-    color: #880d0d;
+    color: var(--red);
 }
 
 .about-section > .skills-head > .skills_hr {
@@ -189,7 +189,7 @@ main {
     border: 1px solid rgba(255, 255, 255, 0.048);
 }
 
-.about-section > .techs_div {
+.about-section > .techs-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -197,12 +197,12 @@ main {
     margin: auto;
 }
 
-.techs_div > .tech_border {
+.techs-container > .tech_border {
     width: 70px;
     height: 70px;
 }
 
-.techs_div > .tech_border > .tech_logo {
+.techs-container > .tech_border > .tech_logo {
     width: 50px;
     height: 50px;
 }
@@ -227,8 +227,8 @@ main {
 
     background-color: rgba(12, 12, 12, 0.466);
     border-radius: 20px;
-    border: 2px solid #880d0d;
-    box-shadow: 0 0 5px #880d0d;
+    border: 2px solid var(--red);
+    box-shadow: 0 0 5px var(--red);
 }
 
 .stockTracker-container > .stocksTracker-image {
@@ -246,7 +246,7 @@ main {
 }
 
 .stockTracker-container > p > a {
-    color: #880d0d;
+    color: var(--red);
 }
 
 .stockTracker-container > .project_techs {
@@ -282,18 +282,18 @@ main {
     font-weight: bold;
     text-decoration: none;
 
-    background-color: #880d0d;
+    background-color: var(--red);
     color: rgb(17, 17, 17);
 
     border-radius: 25px;
-    box-shadow: 0 0 5px #880d0d;
+    box-shadow: 0 0 5px var(--red);
 
     transition: 0.3s;
 }
 
 .seeOnGit-btn:active {
     transform: scale(1.05);
-    box-shadow: 0 0 10px #880d0d;
+    box-shadow: 0 0 10px var(--red);
 }
 
 
@@ -301,8 +301,8 @@ main {
 .contact_content {
     display: flex;
     flex-flow: column;
-
-    width: 80%;
+    justify-content: center;
+    align-items: center;
 
     margin: auto;
 }
@@ -312,7 +312,7 @@ main {
     justify-content: space-between;
     align-items: center;
 
-    width: 87%;
+    width: 70%;
 
     margin: auto;
 }
@@ -326,7 +326,7 @@ main {
 .email-container > i {
     font-size: 2.2em;
 
-    color: #880d0d;
+    color: var(--red);
 }
 
 .socialMedia-container {
@@ -357,12 +357,12 @@ main {
     text-decoration: none;
 
     color: white;
-    border: 1px solid #880d0d;
+    border: 1px solid var(--red);
     border-radius: 10px;
 
     transition: 0.3s;
 }
 
 .btn-cv:active {
-    background-color: #880d0d;
+    background-color: var(--red);
 }

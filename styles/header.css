@@ -1,5 +1,5 @@
 header {
-    background-color: rgb(17, 17, 17);
+    background-color: var(--grey_bg);
     box-shadow: 1px 1px 10px black;
 }
 
@@ -15,7 +15,7 @@ header {
 
 .logo h1 {
     letter-spacing: 0.03em;
-    color: #880d0d;
+    color: var(--red);
 }
 
 header ul {
