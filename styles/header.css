@@ -39,3 +39,7 @@ header ul .item {
     font-size: 1.12em;
     color: rgba(255, 255, 255, 0.700);
 }
+
+.progress-bar {
+    display: none;
+}

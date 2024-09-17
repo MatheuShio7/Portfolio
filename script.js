@@ -6,16 +6,26 @@ document.querySelectorAll('header nav a').forEach(link => {
 
         event.preventDefault()
 
-        const targetPosition = targetSection.offsetTop;
+        const headerHeight = document.querySelector('header').offsetHeight;
+        const sectionPosition = targetSection.offsetTop - headerHeight;
 
         window.scrollTo({
-            top: targetPosition,
+            top: sectionPosition,
             behavior: 'smooth'
         });
 
         history.replaceState(null, '', ' ') // clean URL
     })
 })
+
+// Progress Bar
+function updateProgressBar() {
+    const {scrollTop, scrollHeight} = document.documentElement
+    const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100 + '%'
+    document.querySelector('.progress-bar').style.setProperty('--progress', scrollPercent)
+}
+
+document.addEventListener('scroll', updateProgressBar) 
 
 // Language
 const language_icon = document.querySelector('.selected-language')
@@ -51,7 +61,6 @@ document.addEventListener('click', function(event) {
         closeMenu()
     }
 })
-
 
 // Portuguese selected
 const pt_br_container = document.querySelector('.pt-br')
