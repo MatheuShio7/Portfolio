@@ -168,7 +168,7 @@ photo border animation
 
         padding: 0 50px;
 
-        opacity: 0.8;
+        background-color: rgba(17, 17, 17, 0.61);
     }
 
     .logo {
@@ -189,7 +189,7 @@ photo border animation
 
     .item:hover {
         font-size: 1.22em;
-        color: rgba(255, 255, 255, 0.774);
+        color: rgb(255, 255, 255);
     }
 
     .item::after {
@@ -222,14 +222,109 @@ photo border animation
         z-index: 1000;
     }
 
+    main {
+        margin: 65px;
+    }
+
+    .image-about-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        gap: 90px;
+    }
+
+    .about-section {
+        order: -1; 
+    }
+
+    .about-section > .baseSection_head {
+        margin: 0;
+    }
+
+    .about-section > .techs-container {
+        width: 80%;
+    }
+
+    .techs-container > .tech_border {
+        margin-bottom: 0;
+    }
+
+    .imageLanguage-container {
+        width: 170%;
+        margin: 0;
+        justify-content: flex-start;
+    }
+
     .image_edge {
         width: 250px;
         height: 250px;
+        margin-top: 5%;
+        box-shadow: 0 0 0;
     }
 
     .image_edge img {
         width: 210px;
         height: 240px;
+        border-radius: 30px;
+    }
+
+    .projects-section {
+        width: 65%;
+        margin: auto;
+    }
+
+    .projects-section > .baseSection_head {
+        margin-top: 65px;
+    }  
+
+    .seeOnGit-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px var(--red);
+    }
+
+    .contact-section {
+        width: 65%;
+        margin: auto;
+    }
+
+    .contact-section > .baseSection_head {
+        margin-top: 65px;
+    }
+
+    .email-container {
+        width: 37%;
+    }
+
+    .socialMedia-container {
+        margin-bottom: 25px;
+    }
+
+    .socialMedia-icon {
+        font-size: 2.1em;
+    }
+
+    .socialMedia-icon:hover {
+        color: rgba(255, 255, 255, 0.342);
+        transform: scale(1.05);
+    }
+
+    .btn-cv {
+        border: 2px solid var(--red);
+    }
+
+    .btn-cv:hover {
+        background-color: var(--red);
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    .logo-footer {
+        margin: auto;
+        transform: scale(0.7);
+        padding: 10px 0;
     }
 }
 

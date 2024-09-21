@@ -32,12 +32,12 @@ header ul .item {
     position: relative;
     font-size: 1.1em;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.589);
+    color: rgb(192, 192, 192);
 }
 
 .item:active {
     font-size: 1.12em;
-    color: rgba(255, 255, 255, 0.700);
+    color: rgb(255, 255, 255);
 }
 
 .progress-bar {
