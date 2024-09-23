@@ -254,6 +254,35 @@ photo border animation
         font-size: 1.6em;
     }
 
+    .tech_border {
+        position: relative;
+        overflow: hidden;
+        transition: transform 1s ease;
+    }
+    
+    .tech_border::before {
+        content: '';
+        position: absolute;
+        top: -150%;
+        left: -150%;
+        width: 200%;
+        height: 200%;
+        background: rgba(255, 255, 255, 0.1);
+        transform: rotate(45deg);
+        transition: 0.3s ease;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .tech_border:hover::before {
+        top: 150%;
+        transition: top 0.5s ease-in-out;
+    }
+
+    .tech_border:hover {
+        transform: scale(1.07);
+    }
+
     .about-section > .techs-container {
         width: 80%;
     }
@@ -327,6 +356,30 @@ photo border animation
         margin-top: 65px;
     }  
 
+    .stockTracker-container > p {
+        font-size: 1.07em;
+    }
+
+    .stockTracker-container > .project_techs {
+        width: 80%;
+
+        margin-top: 35px;
+    }
+
+    .project_tech_border {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .project_tech_logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .seeOnGit-btn {
+        margin-top: 25px;
+    }
+
     .seeOnGit-btn:hover {
         transform: scale(1.05);
         box-shadow: 0 0 10px var(--red);
@@ -378,6 +431,74 @@ photo border animation
 }
 
 /* large laptops and desktops */
-@media (min-width: 1200px) {
+@media (min-width: 1281px) {
+    header {
+        padding: 0 70px;
+    }
 
+    main{
+        margin: 80px;
+    }
+
+    .image-about-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .imageLanguage-container {
+        width: 70%;
+    }
+
+    .about-section > .techs-container {
+        width: 55%;
+    }
+
+    .projects-section > .baseSection_head,  .contact-section > .baseSection_head{
+        margin-top: 80px;
+    }
+
+    .stockTracker-container {
+        width: 45%;
+        transition: 0.5s;
+        margin-top: 45px;
+    }
+
+    .stockTracker-container:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px var(--red);
+    }
+
+    .stockTracker-container > .stocksTracker-image {
+        height: 245px;
+    }
+
+    .contact-section > .baseSection_head {
+        width: 70%;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    .contact-section > .baseSection_hr {
+        width: 67.5%;
+        margin: auto;
+    }
+
+    .email-container {
+        width: 25%;
+        margin-top: 20px;
+    }
+
+    .socialMedia-container {
+        width: 30%;
+    }
+
+    .socialMedia-icon {
+        font-size: 2.2em;
+        transition: 0.5s;
+    }
+
+    .logo-footer {
+        transform: scale(0.75);
+        padding: 15px 0;
+    }
 }
