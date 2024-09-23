@@ -242,6 +242,18 @@ photo border animation
         margin: 0;
     }
 
+    .about-section > p {
+        font-size: 1.1em;
+    }
+
+    .about-section > .skills-head {
+        margin-top: 35px;
+    }
+
+    .about-section > .skills-head > .skills-title { 
+        font-size: 1.6em;
+    }
+
     .about-section > .techs-container {
         width: 80%;
     }
@@ -261,6 +273,43 @@ photo border animation
         height: 250px;
         margin-top: 5%;
         box-shadow: 0 0 0;
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.096);
+    }
+
+    .image_edge::before, .image_edge::after {
+        content: "";
+        position: absolute;
+    }
+
+    .image_edge::before {
+        width: 200%;
+        height: 200%;
+        background-image: conic-gradient(
+            rgba(255, 255, 255, 0.500) 0deg,
+            transparent 60deg,
+            transparent 180deg,
+            rgba(255, 255, 255, 0.500) 180deg,
+            transparent 240deg
+        );
+        inset: -50%;
+        z-index: -2;
+        animation: border 8s linear infinite;
+    }
+
+    @keyframes border {
+        to {
+            transform: rotateZ(-360deg);
+        }
+    }
+
+    .image_edge::after {
+        background: linear-gradient(135deg, var(--red), var(--dark_red) 70%);
+        inset: 0.25rem;
+        border-radius: 40px;
+        z-index: -1;
     }
 
     .image_edge img {
