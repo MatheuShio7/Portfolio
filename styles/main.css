@@ -154,7 +154,6 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    padding: 5px;
     background: linear-gradient(135deg, var(--red), var(--dark_red) 70%);
     border-radius: 20px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.450);
@@ -203,8 +202,8 @@ main {
 }
 
 .techs-container > .tech_border > .tech_logo {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
 }
 
 
@@ -358,6 +357,7 @@ main {
 
     color: white;
     border: 1px solid var(--red);
+    box-shadow: 0 0 3px var(--red);
     border-radius: 10px;
 
     transition: 0.3s;
