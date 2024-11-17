@@ -212,7 +212,12 @@ main {
     margin-top: 20px;
 }
 
-.stockTracker-container {
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-container {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -230,26 +235,27 @@ main {
     box-shadow: 0 0 5px var(--red);
 }
 
-.stockTracker-container > .stocksTracker-image {
+.project-container > .project-image {
     height: 145px;
 }
 
-.stockTracker-container > .project_name {
+.project-container > .project_name {
     padding: 15px 0;
     color: white;
 }
 
-.stockTracker-container > p {
+.project-container > p {
     text-align: center;
     color: white;
 }
 
-.stockTracker-container > p > a {
+.project-container > p > a {
     color: var(--red);
 }
 
-.stockTracker-container > .project_techs {
+.project-container > .project_techs {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
 
     width: 80%;
@@ -282,7 +288,7 @@ main {
     text-decoration: none;
 
     background-color: var(--red);
-    color: rgb(17, 17, 17);
+    color: rgba(0, 0, 0, 0.733);
 
     border-radius: 25px;
     box-shadow: 0 0 5px var(--red);
@@ -291,7 +297,7 @@ main {
 }
 
 .seeOnGit-btn:active {
-    transform: scale(1.05);
+    transform: scale(1.03);
     box-shadow: 0 0 10px var(--red);
 }
 

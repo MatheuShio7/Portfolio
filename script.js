@@ -120,7 +120,11 @@ window.addEventListener('load', function() {
         this.document.querySelector('.skills-title').innerHTML = 'Habilidades'
 
         this.document.querySelector('.projects-title').innerHTML = 'Projetos'
-        this.document.querySelector('.stockTracker-container p').innerHTML = 'Stock Tracker é uma plataforma para monitorar seu portfólio de ativos em tempo real. Habilitando o cadastro e obtendo dados importantes como histórico de preços e os últimos 12 ganhos daquele ativo em formato de gráfico. Software disponível em inglês, chinês e português. Todos os dados obtidos através do <a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a>.'
+
+        this.document.querySelector('.stocks-tracker-text').innerHTML = 'Stocks Tracker é uma plataforma para monitorar seu portfólio de ativos em tempo real. Habilitando o cadastro e obtendo dados importantes como histórico de preços e os últimos 12 ganhos daquele ativo em formato de gráfico. Software disponível em inglês, chinês e português. Todos os dados obtidos através do <a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a>.'
+
+        this.document.querySelector('.event-manager-text').innerHTML = 'O Event Manager é uma aplicação web que permite criar, gerenciar e participar de eventos. Desenvolvido com Django, HTML, CSS e JavaScript, o projeto utiliza SQLite como banco de dados e inclui funcionalidades como cadastro, login, compartilhamento de links e controle de visibilidade dos eventos.'
+
         this.document.querySelector('.seeOnGit-btn').innerHTML = 'Ver no GitHub'
 
         this.document.querySelector('.contact-title').innerHTML = 'Contato'
