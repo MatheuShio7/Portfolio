@@ -125,7 +125,10 @@ window.addEventListener('load', function() {
 
         this.document.querySelector('.event-manager-text').innerHTML = 'O Event Manager é uma aplicação web que permite criar, gerenciar e participar de eventos. Desenvolvido com Django, HTML, CSS e JavaScript, o projeto utiliza SQLite como banco de dados e inclui funcionalidades como cadastro, login, compartilhamento de links e controle de visibilidade dos eventos.'
 
-        this.document.querySelector('.seeOnGit-btn').innerHTML = 'Ver no GitHub'
+        const gitButtons = this.document.querySelectorAll('.seeOnGit-btn');
+        gitButtons.forEach(button => {
+            button.innerHTML = 'Ver no GitHub';
+        });
 
         this.document.querySelector('.contact-title').innerHTML = 'Contato'
         this.document.querySelector('.btn-cv').innerHTML = 'Baixar CV'
