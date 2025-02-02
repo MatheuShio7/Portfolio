@@ -317,7 +317,7 @@ main {
     justify-content: space-between;
     align-items: center;
 
-    width: 70%;
+    width: 65%;
 
     margin: auto;
 }
@@ -347,6 +347,7 @@ main {
 .socialMedia-icon {
     font-size: 2em;
     color: rgba(255, 255, 255, 0.226);
+    transition: 0.3s;
 }
 
 .socialMedia-icon:active {

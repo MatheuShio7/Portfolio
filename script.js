@@ -116,7 +116,7 @@ window.addEventListener('load', function() {
         this.document.querySelector('.contact-item').innerHTML = 'Contato'
 
         this.document.querySelector('.about-title').innerHTML = 'Sobre'
-        this.document.querySelector('.about-section p').innerHTML = 'Sou <span>Matheus Shiokawa Silva</span>, estudante do 4º semestre de Ciência da Computação, tenho interesse em <span>desenvolvimento de software</span>. Nascido em Framingham, Massachusetts e atualmente morando no Brasil, estou constantemente explorando novas tecnologias e ampliando meus conhecimentos através de cursos e experiências práticas. Almejo criar <span>soluções de software inovadoras</span> que possam impactar positivamente a sociedade.'
+        this.document.querySelector('.about-section p').innerHTML = 'Sou <span>Matheus Shiokawa Silva</span>, estudante do 5º semestre de Ciência da Computação, com interesse em <span>desenvolvimento de softwares com inteligência artificial</span>. Nascido em Framingham, Massachusetts (EUA), e atualmente morando no Brasil, onde atuo como <span>estagiário de desenvolvimento na NPO Sistemas</span>.Mantenho-me em constante busca por explorar novas tecnologias e ampliar meus conhecimentos através de cursos e experiências práticas. Meu objetivo é criar <span>soluções de software inovadoras, integrando técnicas de IA,</span> que possam impactar positivamente a sociedade e transformar desafios complexos em oportunidades tecnológicas.'
         this.document.querySelector('.skills-title').innerHTML = 'Habilidades'
 
         this.document.querySelector('.projects-title').innerHTML = 'Projetos'

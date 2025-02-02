@@ -90,7 +90,7 @@
     }
 
     .email-container {
-        width: 40%;
+        width: 36.5%;
         margin-bottom: 10px;
     }
 
@@ -99,7 +99,7 @@
     }
 
     .socialMedia-container {
-        width: 40%;
+        width: 36.5%;
         margin-bottom: 20px;
     }
 
@@ -137,7 +137,6 @@
     .logo {
         width: fit-content;
         margin: 0;
-
         padding: 25px 0;
     }
 
@@ -246,7 +245,7 @@
     }
 
     .about-section > .techs-container {
-        width: 80%;
+        width: 50%;
         justify-content: space-evenly;
         gap: 16px;
     }
@@ -318,7 +317,7 @@
     }
 
     .projects-section {
-        width: 65%;
+        width: 75%;
         margin: auto;
     }
 
@@ -327,7 +326,6 @@
     }  
 
     .project-container {
-        width: 65%;
         transition: 0.5s;
     }
 
