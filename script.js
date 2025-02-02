@@ -37,104 +37,107 @@ const language_menu = document.querySelector('.language-menu ul')
 var languageMenuOpen = false
 
 function openMenu() {
-    language_menu.classList.toggle('show')
-    languageMenuOpen = true
+    language_menu.classList.toggle('show');
+    languageMenuOpen = true;
 }
 
 function closeMenu() {
-    language_menu.classList.remove('show')
-    languageMenuOpen = false
+    language_menu.classList.remove('show');
+    languageMenuOpen = false;
 }
 
 // Add event click to language menu
 language_icon.addEventListener('click', function() {
-    icon.classList.toggle('rotate')
-    openMenu()
+    icon.classList.toggle('rotate');
+    openMenu();
 })
 
 // Close menu on document click
 document.addEventListener('click', function(event) {
     if (!language_menu.contains(event.target) && !language_icon.contains(event.target)) {
         if (languageMenuOpen) {
-            icon.classList.toggle('rotate')
+            icon.classList.toggle('rotate');
         }
-        closeMenu()
+        closeMenu();
     }
-})
+});
 
 // Portuguese selected
-const pt_br_container = document.querySelector('.pt-br')
-const pt_br_title = pt_br_container.querySelector('a')
+const pt_br_container = document.querySelector('.pt-br');
+const pt_br_title = pt_br_container.querySelector('a');
 
 pt_br_container.addEventListener('click', function() {
-    flagSelectedLanguage.src = 'images/brazil.png'
+    flagSelectedLanguage.src = 'images/brazil.png';
 
-    icon.classList.remove('rotate')
-    language_menu.classList.remove('show')
-
-    document.querySelectorAll('.language-menu ul li a').forEach(link => {
-        link.classList.remove('selected')
-    });
-
-    pt_br_title.classList.add('selected')
-    localStorage.setItem('language', 'pt-br')
-    location.reload(true)
-})
-
-
-// English selected
-const english_container = document.querySelector('.english')
-const english_title = english_container.querySelector('a')
-
-document.querySelector('.english').addEventListener('click', function() {
-    const flagSelectedLanguage = document.querySelector('.selected-language img')
-    flagSelectedLanguage.src = 'images/usa.png'
-
-    icon.classList.toggle('rotate')
-
-    language_menu.classList.toggle('show')
+    icon.classList.remove('rotate');
+    language_menu.classList.remove('show');
 
     document.querySelectorAll('.language-menu ul li a').forEach(link => {
         link.classList.remove('selected');
     });
 
-    english_title.classList.add('selected')
-    localStorage.setItem('language', 'english')
-    location.reload(true)
+    pt_br_title.classList.add('selected');
+    localStorage.setItem('language', 'pt-br');
+    location.reload(true);
+})
+
+
+// English selected
+const english_container = document.querySelector('.english');
+const english_title = english_container.querySelector('a');
+
+document.querySelector('.english').addEventListener('click', function() {
+    const flagSelectedLanguage = document.querySelector('.selected-language img');
+    flagSelectedLanguage.src = 'images/usa.png';
+
+    icon.classList.toggle('rotate');
+
+    language_menu.classList.toggle('show');
+
+    document.querySelectorAll('.language-menu ul li a').forEach(link => {
+        link.classList.remove('selected');
+    });
+
+    english_title.classList.add('selected');
+    localStorage.setItem('language', 'english');
+    location.reload(true);
 })
 
 // Translation
 window.addEventListener('load', function() {
-    const selectedLanguage = localStorage.getItem('language')
+    const selectedLanguage = localStorage.getItem('language');
+    const htmlElement = document.documentElement;
        
     if (selectedLanguage === 'pt-br') {
-        pt_br_title.classList.add('selected')
-        flagSelectedLanguage.src = 'images/brazil.png'
+        pt_br_title.classList.add('selected');
+        flagSelectedLanguage.src = 'images/brazil.png';
+        htmlElement.lang = 'pt-BR';
 
-        this.document.querySelector('.about-item').innerHTML = 'Sobre'
-        this.document.querySelector('.projects-item').innerHTML = 'Projetos'
-        this.document.querySelector('.contact-item').innerHTML = 'Contato'
+        this.document.querySelector('.about-item').innerHTML = 'Sobre';
+        this.document.querySelector('.projects-item').innerHTML = 'Projetos';
+        this.document.querySelector('.contact-item').innerHTML = 'Contato';
 
-        this.document.querySelector('.about-title').innerHTML = 'Sobre'
-        this.document.querySelector('.about-section p').innerHTML = 'Sou <span>Matheus Shiokawa Silva</span>, estudante do 5º semestre de Ciência da Computação, com interesse em <span>desenvolvimento de softwares com inteligência artificial</span>. Nascido em Framingham, Massachusetts (EUA), e atualmente morando no Brasil, onde atuo como <span>estagiário de desenvolvimento na NPO Sistemas</span>.Mantenho-me em constante busca por explorar novas tecnologias e ampliar meus conhecimentos através de cursos e experiências práticas. Meu objetivo é criar <span>soluções de software inovadoras, integrando técnicas de IA,</span> que possam impactar positivamente a sociedade e transformar desafios complexos em oportunidades tecnológicas.'
-        this.document.querySelector('.skills-title').innerHTML = 'Habilidades'
+        this.document.querySelector('.about-title').innerHTML = 'Sobre';
+        this.document.querySelector('.about-section p').innerHTML = 'Sou <span>Matheus Shiokawa Silva</span>, estudante do 5º semestre de Ciência da Computação, com interesse em <span>desenvolvimento de softwares com inteligência artificial</span>. Nascido em Framingham, Massachusetts (EUA), e atualmente morando no Brasil, onde atuo como <span>estagiário de desenvolvimento na NPO Sistemas</span>.Mantenho-me em constante busca por explorar novas tecnologias e ampliar meus conhecimentos através de cursos e experiências práticas. Meu objetivo é criar <span>soluções de software inovadoras, integrando técnicas de IA,</span> que possam impactar positivamente a sociedade e transformar desafios complexos em oportunidades tecnológicas.';
+        this.document.querySelector('.skills-title').innerHTML = 'Habilidades';
 
-        this.document.querySelector('.projects-title').innerHTML = 'Projetos'
+        this.document.querySelector('.projects-title').innerHTML = 'Projetos';
 
-        this.document.querySelector('.stocks-tracker-text').innerHTML = 'Stocks Tracker é uma plataforma para monitorar seu portfólio de ativos em tempo real. Habilitando o cadastro e obtendo dados importantes como histórico de preços e os últimos 12 ganhos daquele ativo em formato de gráfico. Software disponível em inglês, chinês e português. Todos os dados obtidos através do <a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a>.'
+        this.document.querySelector('.stocks-tracker-text').innerHTML = 'Stocks Tracker é uma plataforma para monitorar seu portfólio de ativos em tempo real. Habilitando o cadastro e obtendo dados importantes como histórico de preços e os últimos 12 ganhos daquele ativo em formato de gráfico. Software disponível em inglês, chinês e português. Todos os dados obtidos através do <a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a>.';
 
-        this.document.querySelector('.event-manager-text').innerHTML = 'O Event Manager é uma aplicação web que permite criar, gerenciar e participar de eventos. Desenvolvido com Django, HTML, CSS e JavaScript, o projeto utiliza SQLite como banco de dados e inclui funcionalidades como cadastro, login, compartilhamento de links e controle de visibilidade dos eventos.'
+        this.document.querySelector('.event-manager-text').innerHTML = 'O Event Manager é uma aplicação web que permite criar, gerenciar e participar de eventos. Desenvolvido com Django, HTML, CSS e JavaScript, o projeto utiliza SQLite como banco de dados e inclui funcionalidades como cadastro, login, compartilhamento de links e controle de visibilidade dos eventos.';
 
         const gitButtons = this.document.querySelectorAll('.seeOnGit-btn');
         gitButtons.forEach(button => {
             button.innerHTML = 'Ver no GitHub';
         });
 
-        this.document.querySelector('.contact-title').innerHTML = 'Contato'
-        this.document.querySelector('.btn-cv').innerHTML = 'Baixar CV'
-        this.document.querySelector('.btn-cv').href = 'images/CV(pt-br).pdf'
+        this.document.querySelector('.contact-title').innerHTML = 'Contato';
+        this.document.querySelector('.btn-cv').innerHTML = 'Baixar CV';
+        this.document.querySelector('.btn-cv').href = 'images/CV(pt-br).pdf';
     } else {
-        english_title.classList.add('selected')
-        flagSelectedLanguage.src = 'images/usa.png'
+        english_title.classList.add('selected');
+        flagSelectedLanguage.src = 'images/usa.png';
+        htmlElement.lang = 'en';
     }
 })
